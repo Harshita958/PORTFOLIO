@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harshita — Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div #main>
+      <!-- Custom Cursor -->
+      <div class="cursor--outer"></div>
+      <div class="cursor--inner"></div>
+
+      <!-- Navigation -->
+      <header class="site-header">
+        <div class="container nav">
+          <a href="#hero" class="logo magnetic" data-strength="0.25"
+            >HARSHITA</a
+          >
+          <nav class="nav-links">
+            <a href="#about" class="magnetic" data-strength="0.4">About</a>
+            <a href="#work" class="magnetic" data-strength="0.4">Work</a>
+            <a href="#contact" class="magnetic" data-strength="0.4">Contact</a>
+            <a href="assets/final harshita resume.pdf" download class="btn download-btn">
+              Download Resume
+            </a>
+          </nav>
+
+          <button class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <div class="mobile-menu">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <h1 class="hero-title">
+              <span class="line">Developer.</span>
+              <span class="line">Designer.</span>
+              <span class="line">Innovator.</span>
+            </h1>
+            <p class="hero-sub">
+              I build fast, clean web experiences with delightful motion.
+            </p>
+            <div class="hero-cta">
+              <a
+                href="#work"
+                class="btn secondary magnetic"
+                data-strength="0.35"
+                >See Projects</a
+              >
+              <a href="#contact" class="btn ghost magnetic" data-strength="0.35"
+                >Hire Me</a
+              >
+            </div>
+          </div>
+
+          <!-- Creative Photo Frame -->
+          <div class="hero-photo-wrap">
+            <div class="photo-card parallax" data-depth="0.08">
+              <!-- Replace src with your image -->
+              <img src="./assets/img1.jpg" alt="Dhruv photo" />
+              <div class="photo-glow"></div>
+              <div class="photo-tag">Available for Internship</div>
+            </div>
+            <div class="floating-tag parallax" data-depth="0.15">
+              • Frontend
+            </div>
+            <div class="floating-circle parallax" data-depth="0.2"></div>
+          </div>
+        </div>
+        <div class="hero-bg parallax" data-depth="0.05"></div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="about-sticky">
+            <h2 class="sec-title">About</h2>
+            <p class="sec-sub">
+              Focused on building robust, scalable interfaces with seamless UX.
+            </p>
+          </div>
+          <div class="about-content">
+            <p class="reveal">
+              I’m Harshita — a B.Tech EC student who loves crafting crisp,
+              performant UIs with GSAP motion, micro-interactions, and
+              accessible design systems. I care about clean code, maintainable
+              architecture, and pixel-perfect details.
+            </p>
+            <p class="reveal">
+              Tech I enjoy: HTML, CSS, JavaScript, React, GSAP, Framer Motion,
+              Tailwind, and a sprinkle of Three.js when needed.
+            </p>
+            <div class="skills reveal">
+              <div class="chip magnetic" data-strength="0.5">GSAP</div>
+              <div class="chip magnetic" data-strength="0.5">React</div>
+              <div class="chip magnetic" data-strength="0.5">UI/UX</div>
+              <div class="chip magnetic" data-strength="0.5">Accessibility</div>
+              <div class="chip magnetic" data-strength="0.5">Performance</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="container">
+          <div class="sec-head">
+            <h2 class="sec-title">Selected Work</h2>
+            <p class="sec-sub">
+              A few projects showcasing motion, clarity, and speed.
+            </p>
+          </div>
+
+          <div class="grid projects">
+            <!-- Project Card -->
+            <article class="card reveal">
+              <div class="card-media">
+                <img src="./assets/obeys.png" alt="Project 1" />
+              </div>
+              <div class="card-body">
+                <h3>Interactive Clone</h3>
+                <p>
+                  Clone of Obey's website using GSAP motion, a simple and modern
+                  design.
+                </p>
+                <div class="card-actions">
+                  <a
+                    href=" https://harshita958.github.io/obeys-clone/"
+                    class="btn tiny magnetic"
+                    data-strength="0.4"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media">
+                <img src="./assets/screenshot.png" alt="Project 2" />
+              </div>
+              <div class="card-body">
+                <h3>Animated Bottle UI</h3>
+                <p>
+                  Simple, interactive design with GSAP motion to create a
+                  visually pleasing
+                </p>
+                <div class="card-actions">
+                  <a
+                    href="https://harshita958.github.io/frontend_bottle_animation/"
+                    class="btn tiny magnetic"
+                    data-strength="0.4"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop"
+                  alt="Project 3"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Upload Soon</h3>
+                <p>
+                  Speedy SSR, image lazy-loading, and elegant
+                  micro-interactions.
+                </p>
+                <div class="card-actions">
+                  <a href="#" class="btn tiny magnetic" data-strength="0.4"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact-section">
+        <div class="contact-bg"></div>
+
+        <div class="container contact-grid">
+          <div>
+            <h2 class="sec-title reveal">Let’s build something</h2>
+            <p class="sec-sub reveal">
+              Open to internships, freelance, and collabs.
+            </p>
+          </div>
+          <form class="contact-form reveal" onsubmit="return false;">
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label class="full">
+              <span>Message</span>
+              <textarea
+                rows="4"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </label>
+            <button class="btn primary magnetic" data-strength="0.35">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container foot">
+          <b
+            ><span>© <span id="year"> </span> Harshita</span></b
+          >
+          <div class="foot-links">
+            <a
+              href="https://www.linkedin.com/in/harshiii-mishra"
+              class="magnetic"
+              data-strength="0.4"
+              ><b>LinkedIn</b></a
+            >
+            <a
+              href="https://github.com/Harshita958"
+              class="magnetic"
+              data-strength="0.4"
+              ><b>GitHub</b></a
+            >
+            <a
+              href="mailto:mharshita958@gmail.com"
+              class="magnetic"
+              data-strength="0.4"
+              ><b>E-mail</b></a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
